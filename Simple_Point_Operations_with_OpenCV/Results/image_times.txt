@@ -1,0 +1,56 @@
+No Of Images        Filename                           RunTimes            
+
+1                   original_image                     1.430511474609375e-06
+1                   thresh_image                       0.0061283111572265625
+1                   thresh_image_Loop                  0.19911885261535645 
+1                   thresh_image_LUT                   0.0509951114654541  
+1                   negative_image                     0.00010013580322265625
+1                   negative_image_Loop                0.2422018051147461  
+1                   negative_image_LUT                 0.05110883712768555 
+1                   log_transform_image                0.01605057716369629 
+1                   log_transform_image_Loop           0.4549229145050049  
+1                   log_transform_image_LUT            0.05583953857421875 
+
+10                  original_image                     1.430511474609375e-06
+10                  thresh_image                       0.0036268234252929688
+10                  thresh_image_Loop                  1.9647955894470215  
+10                  thresh_image_LUT                   0.510002613067627   
+10                  negative_image                     0.0004961490631103516
+10                  negative_image_Loop                2.4352855682373047  
+10                  negative_image_LUT                 0.5083703994750977  
+10                  log_transform_image                0.09789061546325684 
+10                  log_transform_image_Loop           4.572818994522095   
+10                  log_transform_image_LUT            0.5587353706359863  
+
+20                  original_image                     5.0067901611328125e-06
+20                  thresh_image                       0.007162332534790039
+20                  thresh_image_Loop                  3.884658098220825   
+20                  thresh_image_LUT                   1.021385908126831   
+20                  negative_image                     0.0008122920989990234
+20                  negative_image_Loop                4.8694376945495605  
+20                  negative_image_LUT                 1.0172574520111084  
+20                  log_transform_image                0.19523048400878906 
+20                  log_transform_image_Loop           9.0942702293396     
+20                  log_transform_image_LUT            1.1141953468322754  
+
+30                  original_image                     1.6689300537109375e-06
+30                  thresh_image                       0.010217905044555664
+30                  thresh_image_Loop                  5.796306610107422   
+30                  thresh_image_LUT                   1.5323946475982666  
+30                  negative_image                     0.0023670196533203125
+30                  negative_image_Loop                7.403454065322876   
+30                  negative_image_LUT                 1.5239324569702148  
+30                  log_transform_image                0.29247021675109863 
+30                  log_transform_image_Loop           13.882511138916016  
+30                  log_transform_image_LUT            1.6729707717895508  
+
+50                  original_image                     2.1457672119140625e-06
+50                  thresh_image                       0.04387807846069336 
+50                  thresh_image_Loop                  9.83347201347351    
+50                  thresh_image_LUT                   2.60214900970459    
+50                  negative_image                     0.0037364959716796875
+50                  negative_image_Loop                12.500495910644531  
+50                  negative_image_LUT                 2.5861546993255615  
+50                  log_transform_image                0.4971177577972412  
+50                  log_transform_image_Loop           23.44220805168152   
+50                  log_transform_image_LUT            2.853156566619873   
