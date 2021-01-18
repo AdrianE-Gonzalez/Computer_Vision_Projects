@@ -30,7 +30,7 @@ def open_multiple_images(image_amount):
     
     #List Variables
     image_list= []
-    random_images_list= []
+    random_images_list= {}
 
     # Loops Through The Folder Containing The Images Ending In .png
     # Appends Each Image To image_list
@@ -44,6 +44,6 @@ def open_multiple_images(image_amount):
         #Picks A Random Image On image_list And Stores It In temp
         temp=random.choice(image_list)
         #Appends The Image Stored In temp And Appends It To random_images_list
-        random_images_list.append(temp)
+        random_images_list[x]=temp
     
     return random_images_list
