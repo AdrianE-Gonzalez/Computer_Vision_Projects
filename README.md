@@ -4,38 +4,35 @@ Python files include: Load_Images, Log_Transform, Negative_Image,Threshholding, 
 =============
 Load_Images.py:
 -------------
-1. First list item
-   - First nested list item
-     - Second nested list item
-                
+
 1. Imports used: cv2, random, os, glob, load_env
    - cv2: used to read images and used to convert images to grayscale
--random: used to select a random image from the Images folder
--os: Used to get file paths from the .env file
--glob: Used to get each image from the Image Folder
--load_env: used to load .env file
-contains 2 functions:
--open_single_image():
- -loads a single specified image from the Image Folder
--open_multiple_images(image_amount):
- -image_amount: The number given from the list ([1,10,20,30,50])
- -load a random list of images from the Image Folder based on the image_amount given
+   - random: used to select a random image from the Images folder
+   - os: Used to get file paths from the .env file
+   - glob: Used to get each image from the Image Folder
+   - load_env: used to load .env file
+1. contains 2 functions:
+   - open_single_image():
+     - loads a single specified image from the Image Folder
+   - open_multiple_images(image_amount):
+     - image_amount: The number given from the list ([1,10,20,30,50])
+     - load a random list of images from the Image Folder based on the image_amount given
 
 Log_Transform.py
 -------------
-Imports used: cv2, numpy
-contains 3 functions:
-	log_transform_image(image,looping): contains 2 functions
-image= the image being passed through
-looping= boolean opperations stating whether to use the formula for the full image or for every pixel
-	formula():
-		computes the image to the given formula
-	looping_formula():
-		computes each pixel to the given formula
- create_lut_log_transform():
-		creates the lut table for log transform
-	log_transform_image_LUT(image):
-image= the image being passed through
+1. Imports used: cv2, numpy
+1. contains 3 functions:
+   - log_transform_image(image,looping): contains 2 functions
+     - image= the image being passed through
+     - looping= boolean opperations stating whether to use the formula for the full image or for every pixel
+     - formula():
+       - computes the image to the given formula
+     - looping_formula():
+       - computes each pixel to the given formula
+   - create_lut_log_transform():
+     - creates the lut table for log transform
+   - log_transform_image_LUT(image):
+     - image= the image being passed through
 		computes each pixel given the LUT
 
 Negative_Image.py
