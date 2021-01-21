@@ -5,8 +5,8 @@ Python files include: Load_Images, Log_Transform, Negative_Image,Threshholding, 
 Load_Images.py:
 -------------
                 
-Imports used: cv2, random, os, glob, load_env
--cv2: used to read images and used to convert images to grayscale
+1.Imports used: cv2, random, os, glob, load_env
+  -cv2: used to read images and used to convert images to grayscale
 -random: used to select a random image from the Images folder
 -os: Used to get file paths from the .env file
 -glob: Used to get each image from the Image Folder
