@@ -1,6 +1,9 @@
-5 python files and 1 .env file
-Python files include: Load_Images, Log_Transform, Negative_Image,Threshholding, and main
-Load_Images.py:
+#5 python files and 1 .env file
+=============
+#Python files include: Load_Images, Log_Transform, Negative_Image,Threshholding, and main
+=============
+##Load_Images.py:
+-------------
 Imports used: cv2, random, os, glob, load_env
 	cv2: used to read images and used to convert images to grayscale
 random: used to select a random image from the Images folder
@@ -14,7 +17,8 @@ load_env: used to load .env file
 			image_amount: The number given from the list ([1,10,20,30,50])
 					load a random list of images from the Image Folder based on the image_amount given
 
-Log_Transform.py
+##Log_Transform.py
+-------------
 Imports used: cv2, numpy
 contains 3 functions:
 	log_transform_image(image,looping): contains 2 functions
@@ -30,7 +34,8 @@ looping= boolean opperations stating whether to use the formula for the full ima
 image= the image being passed through
 		computes each pixel given the LUT
 
-Negative_Image.py
+##Negative_Image.py
+-------------
 Imports used: cv2, numpy
 contains 3 functions:
 	negative_image(image,looping): contains 2 functions
@@ -46,7 +51,8 @@ looping= boolean opperations stating whether to use the formula for the full ima
 image= the image being passed through
 		computes each pixel given the LUT
 
-Threshholding.py
+##Threshholding.py
+-------------
 Imports used: cv2, numpy
 contains 2 functions:
 threshhold_image(image,looping): contains 2 functions
@@ -64,7 +70,8 @@ image= the image being passed through
 
 
 
-main.py
+##main.py
+-------------
 When you run main.py, it will go through [1,10,20,30,50] images using the test_multiple_images(num) function and store the results in Results Folder 
 Imports Used: 
 Python Files Created: Threshholding, Negative_Image, Log_Transform, and	Load_Images
