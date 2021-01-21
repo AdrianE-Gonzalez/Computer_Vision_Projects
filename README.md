@@ -6,15 +6,15 @@ Load_Images.py:
 -------------
                 
 +Imports used: cv2, random, os, glob, load_env
-	+cv2: used to read images and used to convert images to grayscale
-	+random: used to select a random image from the Images folder
-	+os: Used to get file paths from the .env file
-	+glob: Used to get each image from the Image Folder
-	+load_env: used to load .env file
+	*cv2: used to read images and used to convert images to grayscale
+	*random: used to select a random image from the Images folder
+	*os: Used to get file paths from the .env file
+	*glob: Used to get each image from the Image Folder
+	*load_env: used to load .env file
 +contains 2 functions:
-	+open_single_image():
+	*open_single_image():
 		+loads a single specified image from the Image Folder
-	+open_multiple_images(image_amount):
+	*open_multiple_images(image_amount):
 	 	+image_amount: The number given from the list ([1,10,20,30,50])
 		+load a random list of images from the Image Folder based on the image_amount given
 
