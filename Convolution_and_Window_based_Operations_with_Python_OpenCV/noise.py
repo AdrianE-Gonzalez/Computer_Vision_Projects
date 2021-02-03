@@ -1,17 +1,19 @@
+import cv2
 import numpy as np
+import math
 
 def add_gaussian_noise(mean,variance,image):
-      row,col,ch= image.shape
+      print(image.shape)
+      row,col= image.shape
       st_dev = math.sqrt(variance)
-      gauss_noise = np.random.normal(mean,st_dev,(row,col,ch))
-      gauss_noise = gauss_noise.reshape(row,col,ch)
+      gauss_noise = np.random.normal(mean,st_dev,(row,col))
+      gauss_noise = gauss_noise.reshape(row,col)
       noisy = image + gauss_noise
       noisy = noisy.clip(0,255).astype(np.uint8)
-      show_image(noisy)
       return noisy   
 
 def add_saltpepper_noise(image,p=0.10, s_vs_p=0.50):
-    row,col,ch = image.shape
+    row,col = image.shape
     image_plus_noise = np.copy(image)
     
     # Salt mode
