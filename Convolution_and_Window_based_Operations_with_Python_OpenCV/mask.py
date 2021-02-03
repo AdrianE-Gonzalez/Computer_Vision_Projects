@@ -28,19 +28,19 @@ def apply_mask(img,mask,sum,m2,n2):
         for j in range(n2,N-n2):
             sum=0.0
             #Loops Through Mask Being Applied To The Image
-            for x in range(-m2,m2):
-                for y in range(-n2,n2):
+            for x in range(-m2,m2+1):
+                for y in range(-n2,n2+1):
                     sum+=mask[x+m2][y+n2]*img[i+x][j+y]
-
+                    
             g[i][j]=(sum).clip(0,255).astype(np.uint8)
 
     # Loops Through The Outer Edge Of Image That Did Not Changed From The Mask,
     # Change It To The Specified Color: 255
     for i in range(0,M):
         for j in range(0,N):
-            if i<m2 or i>(M-m2):
+            if i<m2 or i>=(M-m2):
                 g[i][j]=np.uint8(255)
-            elif j<n2 or j>(N-n2):
+            elif j<n2 or  j>=(N-n2):
                 g[i][j]=np.uint8(255)
 
     return g
