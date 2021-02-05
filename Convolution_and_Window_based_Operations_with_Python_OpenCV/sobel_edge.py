@@ -11,11 +11,13 @@ def apply_sobel_edge(image):
 
     g=image.copy()
     M,N=image.shape
-    abs_form=0
+    sobelx=0
+    sobely=0
 
     # Loops Through Each Image Pixel And Applies Formula To Image
     for x in range(0,M-1):
         for y in range(0,N-1):
-            abs_form= abs(abs((-image[x-1][y-1])-(2*image[x-1][y])-(image[x-1][y+1])+(image[x+1][y-1])+(2*image[x+1][y])+(image[x+1][y+1]))+abs((-image[x-1][y-1])-(2*image[x][y-1])-(image[x+1][y-1])+(image[x-1][y+1])+(2*image[x][y+1])+(image[x+1][y+1])))
-            g[x][y]=np.uint8(abs(abs_form))
+            sobelx= abs((-image[x-1][y-1])-(2*image[x-1][y])-(image[x-1][y+1])+(image[x+1][y-1])+(2*image[x+1][y])+(image[x+1][y+1]))
+            sobely= abs((-image[x-1][y-1])-(2*image[x][y-1])-(image[x+1][y-1])+(image[x-1][y+1])+(2*image[x][y+1])+(image[x+1][y+1]))
+            g[x][y]=np.uint8(abs(sobelx+sobely))
     return g
