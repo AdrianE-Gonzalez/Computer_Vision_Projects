@@ -102,7 +102,7 @@ def run_test(num_run):
                                         cv2.imwrite(temp_filename, unweighted)
                                         
                                         # Stores openCV_unweighted Image To Results Folder 
-                                        temp_openCV_filename=openCV_filename_+'/Unweighted/Unweighted_Average_'+str(matrix_)+'x'+str(matrix_)+'_'+str(count)+'.jpg'
+                                        temp_openCV_filename=openCV_filename_+'/Unweighted/openCV_Unweighted_Average_'+str(matrix_)+'x'+str(matrix_)+'_'+str(count)+'.jpg'
                                         cv2.imwrite(temp_openCV_filename, openCV_unweighted) 
 
                                         # Stores weighted Image To Results Folder
@@ -114,7 +114,7 @@ def run_test(num_run):
                                         cv2.imwrite(temp_filename, gaussian) 
                                         
                                         # Stores openCV_gaussian Image To Results Folder
-                                        temp_openCV_filename=openCV_filename_+'/Gaussian/Gaussian_Mask_'+str(matrix_)+'x'+str(matrix_)+'_'+str(count)+'.jpg'
+                                        temp_openCV_filename=openCV_filename_+'/Gaussian/openCV_Gaussian_Mask_'+str(matrix_)+'x'+str(matrix_)+'_'+str(count)+'.jpg'
                                         cv2.imwrite(temp_openCV_filename, openCV_gaussian) 
                                         
                                         #MEDIAN FILTERING
@@ -128,7 +128,7 @@ def run_test(num_run):
                                         cv2.imwrite(temp_filename, median) 
                                         
                                         # Stores openCV_median Image To Results Folder
-                                        temp_openCV_filename=openCV_filename_+'/Median/Median_Filtering_'+str(matrix_)+'x'+str(matrix_)+'_'+str(count)+'.jpg'
+                                        temp_openCV_filename=openCV_filename_+'/Median/openCV_Median_Filtering_'+str(matrix_)+'x'+str(matrix_)+'_'+str(count)+'.jpg'
                                         cv2.imwrite(temp_openCV_filename, openCV_median) 
 
                                         # cv2.imshow("Unweighted Average Of "+img_n[1],unweighted)        
@@ -147,7 +147,7 @@ def run_test(num_run):
                         cv2.imwrite(temp_filename, sobel) 
                         
                         # Stores openCV_sobel Image To Results Folder
-                        temp_openCV_filename=OpenCV_Filters+'/Sobel_Edge/Sobel_Edge_'+str(count)+'.jpg'
+                        temp_openCV_filename=OpenCV_Filters+'/Sobel_Edge/openCV_Sobel_Edge_'+str(count)+'.jpg'
                         cv2.imwrite(temp_openCV_filename, openCV_sobel) 
                         
                         # cv2.imshow("Sobel",sobel) 
@@ -181,7 +181,8 @@ def run_openCV_test(num_run):
                         cv2.destroyAllWindows()   
 
 
-
+# Test Runs OpenCV Filters For One Image
+# Can Change num_run To The Amount Of Images Wanting To Test
 print("Running Test")
 run_test(num_run=3)
 
