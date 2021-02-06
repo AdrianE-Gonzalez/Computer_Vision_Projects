@@ -137,14 +137,14 @@ def run_test(num_run):
                                         # cv2.imshow("Median Filtering Of "+img_n[1],median) 
                         
                         for num_ in [3,5]:
-                                if matrix_==3:
+                                if num_==3:
                                         # Changes Results Path To 3x3 Matrix
                                         filename_=My_Filters+'/Sobel_Edge/3x3_Mask/'
-                                        openCV_filename_=openCV_filename+'/Sobel_Edge/3x3_Mask/'
+                                        openCV_filename_=OpenCV_Filters+'/Sobel_Edge/3x3_Mask/'
 
-                                if matrix_==5:
+                                if num_==5:
                                         # Changes Results Path To 5x5 Matrix
-                                        filename_=filename+'/Sobel_Edge/5x5_Mask/'
+                                        filename_=My_Filters+'/Sobel_Edge/5x5_Mask/'
                                         openCV_filename_=OpenCV_Filters+'/Sobel_Edge/5x5_Mask/'
 
                                 # SOBEL FILTERING
@@ -154,11 +154,11 @@ def run_test(num_run):
                                 openCV_sobel=openCV_mask_filters.get_sobel(img,mask_size=num_)
 
                                 # Stores sobel Image To Results Folder
-                                temp_filename=filename_+'/Sobel_Edge_'+str(count)+'.jpg'
+                                temp_filename=filename_+'Sobel_Edge_'+str(num_)+'x'+str(num_)+'_'+str(count)+'.jpg'
                                 cv2.imwrite(temp_filename, sobel) 
                                 
                                 # Stores openCV_sobel Image To Results Folder
-                                temp_openCV_filename=openCV_filename_+'/openCV_Sobel_Edge_'+str(count)+'.jpg'
+                                temp_openCV_filename=openCV_filename_+'openCV_Sobel_Edge_'+str(num_)+'x'+str(num_)+'_'+str(count)+'.jpg'
                                 cv2.imwrite(temp_openCV_filename, openCV_sobel)
 
                         # SOBEL FILTERING
