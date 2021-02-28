@@ -8,12 +8,12 @@ import numpy as np
 import os
 from dotenv import load_dotenv
 
-def test_run():
+def test_run(num_run):
     load_dotenv()
     SAVE_PATH= os.getenv("SAVE_PATH")
 
     # Images Size 384,384
-    img=load_images(1)
+    img=load_images(num_run)
     metric_list= ['ncc','nssd']
     cnt=0
 
