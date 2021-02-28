@@ -35,7 +35,7 @@ def pyramid_temp_match(image, template, no_of_levels, metric):
         elif metric == 'nssd':
             temp_cal= cv2.matchTemplate(image_list[num], temp_list[num],cv2.TM_SQDIFF_NORMED)
             min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(temp_cal)
-            top_left= max_loc
+            top_left= min_loc
     
         
         bottom_right = (top_left[0] + m, top_left[1] + n)
